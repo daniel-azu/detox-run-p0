@@ -1,3 +1,4 @@
+#!/bin/bash -e
 #Download the app here
 echo MY_VARIABLE is $MY_VARIABLE
 currDir=`pwd`

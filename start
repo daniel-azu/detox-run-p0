@@ -1,3 +1,4 @@
+#!/bin/bash -e
 echo start running scripts
 `pwd`/runDetoxTests
 echo done running scripts

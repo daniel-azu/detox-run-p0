@@ -1,8 +1,10 @@
 #Download the app here
-currDir=pwd
+currDir=`pwd`
+echo $currDir
+echo $currDir/tmp
 mkdir $currDir/tmp
 cd `mktemp -d $currDir/tmp/temp_dir.XXXXXXX`
-git clone git@github.com:wix-private/mre-demo-module-4.git #$RepoPath
+git clone http://github.com/wix-private/mre-demo-module-4.git #$RepoPath
 cd mre-demo-module-4
 #TODO Download the installable app
 npm install --legacy-peer-deps #TODO Support also JDH

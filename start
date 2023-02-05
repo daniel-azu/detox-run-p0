@@ -1,0 +1,3 @@
+echo start running scripts
+`pwd`/runDetoxTests
+echo start running scripts

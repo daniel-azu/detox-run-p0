@@ -4,6 +4,7 @@ echo MY_VARIABLE is $MY_VARIABLE
 currDir=`pwd`
 echo $currDir
 echo $currDir/tmp
+rm -rf $currDir/tmp
 mkdir $currDir/tmp
 cd `mktemp -d $currDir/tmp/temp_dir.XXXXXXX`
 PATH=$currDir/../../../gt

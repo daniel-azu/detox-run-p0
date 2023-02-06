@@ -7,9 +7,7 @@ echo $currDir/tmp
 rm -rf $currDir/tmp
 mkdir $currDir/tmp
 cd `mktemp -d $currDir/tmp/temp_dir.XXXXXXX`
-GT_PATH=$currDir/../../../gt
-GITHUB_TOKEN=`cat $currDir/../../../gt`
-git clone git@github.com:wix-private/mre-demo-module-4.git #$RepoPath
+git clone git@github.com:wix-private/mre-demo-module-4.git
 cd mre-demo-module-4
 #TODO Download the installable app
 nvm install 16

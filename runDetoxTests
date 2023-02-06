@@ -9,8 +9,9 @@ mkdir $currDir/tmp
 cd `mktemp -d $currDir/tmp/temp_dir.XXXXXXX`
 GT_PATH=$currDir/../../../gt
 GITHUB_TOKEN=`cat $currDir/../../../gt`
-git clone http://${GITHUB_TOKEN}@github.com/wix-private/mre-demo-module-4.git #$RepoPath
+git clone git@github.com:wix-private/mre-demo-module-4.git #$RepoPath
 cd mre-demo-module-4
 #TODO Download the installable app
+nvm install
 npm install --legacy-peer-deps #TODO Support also JDH
 npm run test
